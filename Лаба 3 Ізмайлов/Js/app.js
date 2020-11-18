@@ -18,7 +18,7 @@
             let products = products1.split(' ');
 
             for (let i = products.length - 1; i >= 0; i--) {
-                if (products[i] === "") products.splice(i, 1);
+                if (products[i].trim() === "") products.splice(i, 1);
             }
             if (products.length === 0) {
                 return"Будь ласка, уведіть дані!";
